@@ -19,12 +19,12 @@ jobs:
       MONGODB_USERNAME: root
       MONGODB_PASSWORD: P@ssw0rd
       PORT: 8080
-      services:
-        mongodb:
-          image: mongo
-          env:
-            MONGO_INITDB_ROOT_USERNAME: root
-            MONGO_INITDB_ROOT_PASSWORD: P@ssw0rd
+    services:
+      mongodb:
+        image: mongo
+        env:
+          MONGO_INITDB_ROOT_USERNAME: root
+          MONGO_INITDB_ROOT_PASSWORD: P@ssw0rd
     steps:
       - name: Get Code
         uses: actions/checkout@v3
